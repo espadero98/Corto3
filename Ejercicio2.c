@@ -1,4 +1,3 @@
-//EDGARDO ERNESTO ESPADERO MIRANDA EM16006
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -35,12 +34,12 @@ void insertar(int num) {
 
 void main() {
     int numero;
-    char * cad = malloc(12 * sizeof (char));
+    char * cadena = malloc(12 * sizeof (char));
     printf("Ingrese un número:\n");
     scanf("%d", &numero);
-    sprintf(cad, "%i", numero);
-    for (int i = 0; cad[i] != '\0'; i++) {
-        int n = (cad[i] - '0');
+    sprintf(cadena, "%i", numero);
+    for (int i = 0; cadena[i] != '\0'; i++) {
+        int n = (cadena[i] - '0');
         insertar(n);
     }
     imprimir();
